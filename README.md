@@ -32,7 +32,7 @@ Now odoo 17 will be installed.
 
 `mkdir .vscode/launch.json
 `
-
+```
 {
     "version": "0.2.0",
     "configurations": [
@@ -52,7 +52,7 @@ Now odoo 17 will be installed.
         }
     ]
 }
-
+```
 `pip install inotify
 `
 
