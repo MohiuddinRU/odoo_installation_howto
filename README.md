@@ -9,29 +9,27 @@ git clone git@github.com:odoo/odoo.git --branch 17.0 --depth 1
 
 এবার আমরা একটি virtual environment তৈরি করব যাতে আমাদের প্রয়োজনীয় সকল package গুলো install হবে। 
 
-python3 -m venv .venv
+`python3 -m venv .venv`
 এখানে .venv হচ্ছে virtual environment এর path
 
-source .venv/bin/activate
+`source .venv/bin/activate`
 
-which python3
+`which python3`
 
 To install the dependencies
-pip install -r requirements.txt
+`pip install -r requirements.txt`
 
-pip install wheel
+`pip install wheel`
 
 We want to install odoo as binary package
 
-pip install .
+`pip install .`
 
 Now odoo 17 will be installed.
 
-`which odoo
-`
+`which odoo`
 
-`mkdir .vscode/launch.json
-`
+`mkdir .vscode/launch.json`
 ```
 {
     "version": "0.2.0",
