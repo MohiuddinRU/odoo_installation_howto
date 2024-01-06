@@ -112,3 +112,4 @@ workers = 0
 x_sendfile = False
 ```
 
+To debug now in vscode press `F5`
