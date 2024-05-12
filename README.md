@@ -69,22 +69,25 @@ db_user = mohiuddin
 
 To debug now in vscode press `F5`
 
+Before restoring the database we can move the DB dump file to `/var/lib/postgresql` 
+
 To login as postgres user
 ```
 sudo -i -u postgres
 ```
-
-Before restoring the database we can move the DB dump file to `/var/lib/postgresql` 
+```
+psql
+```
+Now it's database cmd
 
 To restore a database create the database first and drop if it exists.
 ```
-CREATE DATABASE `database_name` owner  `username`
+CREATE DATABASE database_name owner  username
 ```
 
 Exist the database cmd
 Now run
 ```
 pg_restore -v -d DATABASE_NAME dumpFileName.dump --no-owner
-
 ```
 Here -v means verbose
