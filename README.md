@@ -71,7 +71,7 @@ To debug now in vscode press `F5`
 
 To login as postgres user
 ```
-sudo -i - u postgres
+sudo -i -u postgres
 ```
 To restore a database create the database first and drop if it exists.
 CREATE DATABASE `database_name` owner  `username`
@@ -82,3 +82,4 @@ Now run
 pg_restore -v -d DATABASE_NAME dumpFileName.dump --no-owner
 
 ```
+Here -v means verbose
