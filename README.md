@@ -74,7 +74,9 @@ To login as postgres user
 sudo -i -u postgres
 ```
 To restore a database create the database first and drop if it exists.
+```
 CREATE DATABASE `database_name` owner  `username`
+```
 
 Exist the database cmd
 Now run
