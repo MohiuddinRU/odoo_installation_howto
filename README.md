@@ -38,7 +38,7 @@ Now odoo 17 will be installed.
     "configurations": [
         {
             "name": "Odoo 17",
-            "type": "python",
+            "type": "debugpy",
             "request": "launch",
             "python": "/home/mohiuddin/odoo17/.venv/bin/python3",
             "program": "/home/mohiuddin/odoo17/.venv/bin/odoo",
