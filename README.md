@@ -73,6 +73,9 @@ To login as postgres user
 ```
 sudo -i -u postgres
 ```
+
+Before restoring the database we can move the DB dump file to `/var/lib/postgresql` 
+
 To restore a database create the database first and drop if it exists.
 ```
 CREATE DATABASE `database_name` owner  `username`
