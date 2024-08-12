@@ -40,11 +40,11 @@ Now odoo 17 will be installed.
             "name": "Odoo 17",
             "type": "debugpy",
             "request": "launch",
-            "python": "/home/mohiuddin/odoo17/.venv/bin/python3",
-            "program": "/home/mohiuddin/odoo17/.venv/bin/odoo",
+            "python": "${cwd}/.venv/bin/python3",
+            "program": "${cwd}/.venv/bin/odoo",
             "args": [
                 "-c",
-                "/home/mohiuddin/odoo17/.odoorc",
+                "${cwd}/.odoorc",
                 "--dev",
                 "all"
             ],
