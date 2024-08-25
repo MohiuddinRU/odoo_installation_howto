@@ -11,6 +11,10 @@ git clone git@github.com:odoo/odoo.git --branch 17.0 --depth 1
 এবার আমরা একটি virtual environment তৈরি করব যাতে আমাদের প্রয়োজনীয় সকল package গুলো install হবে।
 
 `python3 -m venv .venv`
+
+To use python 3.10 use version number explicitly because sometimes newer Odoo doesn't support newer python version. 
+
+`python3.10 -m venv .venv`
 এখানে .venv হচ্ছে virtual environment এর path
 
 `source .venv/bin/activate`
