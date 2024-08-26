@@ -37,3 +37,19 @@ psql --host localhost --port 5432 --username demoUser --password
 ``` 
 
 In case of password promt provide the password. Check if you now can create database;
+
+
+---------------------------------OR---------------------------------
+
+For a new odoo install we need a postgres database user.
+Login to posgres and create a user. 
+
+```
+sudo su postgres
+```
+```
+createuser --createdb --username postgres --no-superuser --pwprompt sojib
+``` 
+
+In this command I used a example database user name "sojib".
+After this command it will ask for a password, set the password. This pasword and user name we use in our odoo config file.
