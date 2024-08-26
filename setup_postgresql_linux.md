@@ -31,7 +31,7 @@ To give the user access to create database and login into postgres we can assign
 alter user demoUser CREATEDB LOGIN
 ```
 
-Now, to login with user demoUser and password run:
+Now, to login with user demoUser and password run the below command in linux terminal (not as SQL query):
 ```
 psql --host localhost --port 5432 --username demoUser --password
 ``` 
