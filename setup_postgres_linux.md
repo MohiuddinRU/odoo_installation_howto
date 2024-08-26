@@ -17,3 +17,11 @@ Here `1234` is the password of the user.
 
 To change this password again run below query:
 `alter user demoUser with password 'NewPassword'`
+
+To give the user access to create database and login into postgres we can assign role like this
+`alter user demoUser CREATEDB LOGIN`
+
+Now to login with user demoUser and password run:
+`psql --host localhost --port 5432 --username demoUser --password` 
+
+In case of password promt provide the password. Check if you now can create database;
