@@ -14,3 +14,6 @@ Now create an user with CREATEDB permission.
 `create user demoUser with password '1234'`
 
 Here `1234` is the password of the user.
+
+To change this password again run below query:
+`alter user demoUser with password 'NewPassword'`
