@@ -1,7 +1,7 @@
 # odoo-installation-howto
 
 ```
-git clone git@github.com:odoo/odoo.git --branch 17.0 --depth 1
+git clone git@github.com:odoo/odoo.git --branch 20.0 --depth 1
 ```
 
 এখানে branch অর্থ কোন branch আমরা clone করতে চাই। depth 1 অর্থ আমরা লাস্ট history টা রাখতে চাই।
@@ -12,9 +12,9 @@ git clone git@github.com:odoo/odoo.git --branch 17.0 --depth 1
 
 `python3 -m venv .venv`
 
-To use python 3.10 use version number explicitly because sometimes newer Odoo doesn't support newer python version. 
+To use python 3.14 use version number explicitly because sometimes newer Odoo doesn't support newer python version. 
 
-`python3.10 -m venv .venv`
+`python3.14 -m venv .venv`
 এখানে .venv হচ্ছে virtual environment এর path
 
 `source .venv/bin/activate`
@@ -41,14 +41,14 @@ Now odoo 17 will be installed.
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Odoo 17",
+            "name": "Odoo Debugger",
             "type": "debugpy",
             "request": "launch",
             "python": "${cwd}/.venv/bin/python3",
             "program": "${cwd}/.venv/bin/odoo",
             "args": [
                 "-c",
-                "${cwd}/.odoorc",
+                "${cwd}/odoo.conf",
                 "--dev",
                 "all"
             ],
@@ -63,7 +63,7 @@ Now odoo 17 will be installed.
 
 ```
 [options]
-addons_path = ~/odoo17/odoo/addons/, ~/odoo17/custom/
+addons_path = ~/odoo20/odoo/addons/, ~/odoo20/custom/addons
 db_name = False
 db_host = localhost
 db_password = 1234
